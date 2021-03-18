@@ -52,6 +52,7 @@ section {
   width: 70vw;
   border: 3px solid pink;
   align-items: center;
+  /* position: relative; */
 }
 
 /* design for every slider */
@@ -61,11 +62,20 @@ section {
   /* border: 2px solid black; */
 }
 
-.yellow {
+.orange {
   background-color: #f7941e;
+  position: relative;
+  animation-name: move-left;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
 }
 
-.orange {
+.brown {
   background-color: #cd714b;
 }
 
@@ -73,9 +83,14 @@ section {
   background-color: #56ca4e;
 }
 
-.brown {
+.yellow {
   background-color: #f8e156;
 }
+
+.pink {
+  background-color: #fc12e1;
+}
+
 /* hover effect on the x-menu one*/
 .one:hover .first {
   transform: rotate(0.15turn);
@@ -89,4 +104,15 @@ section {
 
 .one:hover .second {
   display: none;
+}
+
+/* animatiom for the slider-menu-container */
+
+@keyframes move-left {
+  from {
+    right: 200.3px;
+  }
+  to {
+    right: 134.4px;
+  }
 }
