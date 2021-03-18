@@ -59,20 +59,20 @@ section {
 .slider {
   width: 4rem;
   height: 3.5rem;
+  position: relative;
+  animation-name: move-left;
+  animation-delay: 0s;
+  /* animation-timing-function: linear; */
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
   /* border: 2px solid black; */
 }
 
 .orange {
   background-color: #f7941e;
-  position: relative;
-  animation-name: move-left;
-  animation-delay: 0s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-fill-mode: forwards;
 }
 
 .brown {
