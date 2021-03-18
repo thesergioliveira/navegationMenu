@@ -4,14 +4,17 @@
   box-sizing: border-box;
 }
 
+/* setting up variables */
 :root {
   font-size: 16px;
   --black: rgba(0, 0, 0, 0.644);
 }
 
+/* general layout for the page */
+
 body {
   display: flex;
-  border: 2px dashed purple;
+  /* border: 2px dashed purple; */
 }
 
 section {
@@ -22,10 +25,12 @@ section {
   border: 2px dashed orange;
 }
 
+/* menu general layout */
 .x-menu {
-  border: 2px solid red;
-  width: 6vw;
-  height: 6vh;
+  border: 2px solid black;
+  background-color: tomato;
+  width: 4rem;
+  height: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -33,6 +38,7 @@ section {
   margin: 3px;
 }
 
+/* design for every line  */
 .line {
   width: 3rem;
   height: 0.3rem;
@@ -40,6 +46,37 @@ section {
   border-radius: 10px;
 }
 
+/* design for the slider-menu */
+.slider-menu-container {
+  display: flex;
+  width: 70vw;
+  border: 3px solid pink;
+  align-items: center;
+}
+
+/* design for every slider */
+.slider {
+  width: 4rem;
+  height: 3.5rem;
+  /* border: 2px solid black; */
+}
+
+.yellow {
+  background-color: #f7941e;
+}
+
+.orange {
+  background-color: #cd714b;
+}
+
+.green {
+  background-color: #56ca4e;
+}
+
+.brown {
+  background-color: #f8e156;
+}
+/* hover effect on the x-menu one*/
 .one:hover .first {
   transform: rotate(0.15turn);
   position: absolute;
