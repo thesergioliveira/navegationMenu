@@ -24,8 +24,8 @@ section {
 
 .x-menu {
   border: 2px solid red;
-  width: 08vw;
-  height: 08vh;
+  width: 6vw;
+  height: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -34,7 +34,22 @@ section {
 }
 
 .line {
-  width: 80%;
-  height: 3px;
+  width: 3rem;
+  height: 0.3rem;
   background-color: var(--black);
+  border-radius: 10px;
+}
+
+.one:hover .first {
+  transform: rotate(0.15turn);
+  position: absolute;
+}
+
+.one:hover .third {
+  transform: rotate(-0.15turn);
+  position: absolute;
+}
+
+.one:hover .second {
+  display: none;
 }
