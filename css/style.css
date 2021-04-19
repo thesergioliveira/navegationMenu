@@ -45,6 +45,7 @@ section {
   height: 0.3rem;
   background-color: var(--black);
   border-radius: 10px;
+  transition: all 500ms ease-in;
 }
 
 /* design for the slider-menu */
@@ -71,20 +72,37 @@ section {
 .green,
 .yellow,
 .pink {
-  background-color: #f7941e;
   position: absolute;
   top: 0;
   left: 0;
   margin: 3px;
+  transition: all 200ms linear;
 }
 
+.orange {
+  background-color: #f7941e;
+}
+.brown {
+  background-color: #cd714b;
+}
+.green {
+  background-color: #56ca4e;
+}
+.yellow {
+  background-color: #f8e156;
+}
+.pink {
+  background-color: #fc12e1;
+}
 /* hover effect on the x-menu one*/
-.one:hover .first {
+.one:hover .first,
+.two:hover .first {
   transform: rotate(0.15turn);
   position: absolute;
 }
 
-.one:hover .third {
+.one:hover .third,
+.two:hover .third {
   transform: rotate(-0.15turn);
   position: absolute;
 }
